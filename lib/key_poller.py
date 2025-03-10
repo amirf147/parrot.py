@@ -2,6 +2,7 @@
 from config.config import IS_WINDOWS
 
 if (IS_WINDOWS == True):
+    print( "Windows detected - using msvcrt" )
     import msvcrt
 else:
     import sys
